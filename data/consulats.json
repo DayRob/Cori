@@ -1,0 +1,719 @@
+{
+  "meta": {
+    "derniereMiseAJour": "2026-09-22",
+    "avertissement": "Données rassemblées depuis les sites officiels des postes diplomatiques français et France Diplomatie. Les coordonnées changent : vérifiez toujours sur le site officiel du poste avant de vous déplacer. Les entrées marquées « à vérifier » n'ont pas pu être confirmées de façon fiable et ne doivent pas être considérées comme exactes.",
+    "urgenceFrance": {
+      "nom": "Centre de crise et de soutien (MEAE)",
+      "lieu": "Paris",
+      "telephone": "+33 1 53 59 11 00",
+      "description": "Joignable 24 h/24 et 7 j/7 depuis l'étranger pour les urgences graves concernant des ressortissants français (accident, disparition, décès, crise sécuritaire).",
+      "aVerifier": false
+    },
+    "franceConsulaire": {
+      "nom": "Service France Consulaire",
+      "description": "Renseignements sur les démarches consulaires (hors visas), du lundi au vendredi. Les horaires et le numéro local varient selon le pays : voir la fiche de chaque pays ci-dessous.",
+      "aVerifier": false
+    }
+  },
+  "pays": [
+    {
+      "id": "perou",
+      "nom": "Pérou",
+      "emoji": "🇵🇪",
+      "indicatif": "+51",
+      "siteOfficiel": "https://pe.ambafrance.org/",
+      "urgencesLocales": [
+        {
+          "service": "Police nationale (PNP)",
+          "numero": "105",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Pompiers (Bomberos)",
+          "numero": "116",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Urgences médicales (SAMU)",
+          "numero": "106",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Numéro d'urgence unique",
+          "numero": "911",
+          "aVerifier": true,
+          "note": "Fonctionne dans une partie du pays seulement — privilégier les numéros ci-dessus."
+        }
+      ],
+      "postes": [
+        {
+          "nom": "Ambassade de France au Pérou",
+          "type": "Ambassade et section consulaire",
+          "ville": "Lima",
+          "adresse": "Av. Arequipa 3415, San Isidro, Lima 15046",
+          "adresseCarte": "Ambassade de France, Avenida Arequipa 3415, San Isidro, Lima, Pérou",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+51 1 215 84 00",
+              "aVerifier": false
+            },
+            {
+              "libelle": "France Consulaire (numéro local)",
+              "numero": "+51 1 701 69 09",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Contact",
+              "adresse": "contact.lima-amba@diplomatie.gouv.fr"
+            }
+          ],
+          "horaires": "France Consulaire : du lundi au vendredi, 14 h – 20 h (heure de Paris)",
+          "siteWeb": "https://pe.ambafrance.org/",
+          "notes": [
+            "Numéro d'astreinte pour les urgences en dehors des heures d'ouverture : à vérifier auprès du poste."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Cusco",
+          "type": "Consulat honoraire",
+          "ville": "Cusco",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://pe.ambafrance.org/Agences-consulaires-Cusco-Arequipa-Iquitos",
+          "notes": [
+            "Coordonnées non confirmées de façon fiable : consulter la page officielle des agences consulaires du Pérou."
+          ]
+        },
+        {
+          "nom": "Agence consulaire d'Arequipa",
+          "type": "Consulat honoraire",
+          "ville": "Arequipa",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://pe.ambafrance.org/Agences-consulaires-Cusco-Arequipa-Iquitos",
+          "notes": [
+            "Coordonnées non confirmées de façon fiable : consulter la page officielle des agences consulaires du Pérou."
+          ]
+        },
+        {
+          "nom": "Agence consulaire d'Iquitos",
+          "type": "Consulat honoraire",
+          "ville": "Iquitos",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://pe.ambafrance.org/Agences-consulaires-Cusco-Arequipa-Iquitos",
+          "notes": [
+            "Coordonnées non confirmées de façon fiable : consulter la page officielle des agences consulaires du Pérou."
+          ]
+        }
+      ],
+      "sources": [
+        "https://pe.ambafrance.org/",
+        "https://www.diplomatie.gouv.fr/fr/services/annuaire-et-contacts/representations-francaises/ambassade-de-france-au-perou",
+        "https://lannuaire.service-public.gouv.fr/ambassades/e8f5cff9-11c7-4fc7-a11f-e83e2bff180c"
+      ]
+    },
+    {
+      "id": "bolivie",
+      "nom": "Bolivie",
+      "emoji": "🇧🇴",
+      "indicatif": "+591",
+      "siteOfficiel": "https://bo.ambafrance.org/",
+      "urgencesLocales": [
+        {
+          "service": "Police (Radio Patrullas 110)",
+          "numero": "110",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Pompiers (Bomberos)",
+          "numero": "119",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Ambulances / urgences médicales",
+          "numero": "118",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Urgences médicales (autre ligne)",
+          "numero": "160",
+          "aVerifier": true,
+          "note": "Ligne complémentaire signalée pour les ambulances ; disponibilité à vérifier selon la ville."
+        }
+      ],
+      "postes": [
+        {
+          "nom": "Ambassade de France en Bolivie",
+          "type": "Ambassade et section consulaire",
+          "ville": "La Paz",
+          "adresse": "Av. Hernando Siles n° 5390, esquina calle 8, Obrajes, La Paz",
+          "adresseCarte": "Ambassade de France, Avenida Hernando Siles 5390, Obrajes, La Paz, Bolivie",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+591 2 214 99 00",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Urgences",
+              "numero": "+591 775 93 158",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Informations générales",
+              "adresse": "informations.la-paz-amba@diplomatie.gouv.fr"
+            },
+            {
+              "libelle": "Français de l'étranger",
+              "adresse": "admin-francais.la-paz-amba@diplomatie.gouv.fr"
+            },
+            {
+              "libelle": "Visas",
+              "adresse": "admin-etrangers.la-paz-amba@diplomatie.gouv.fr"
+            }
+          ],
+          "horaires": "Accueil du public sur rendez-vous, du lundi au vendredi 8 h 30 – 12 h 30. Permanence téléphonique de la section consulaire : lundi à jeudi 14 h – 16 h 30",
+          "siteWeb": "https://bo.ambafrance.org/Coordonnees-et-plan-d-acces",
+          "notes": [
+            "Adresse postale : Casilla 717, La Paz"
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Santa Cruz de la Sierra",
+          "type": "Consulat honoraire",
+          "ville": "Santa Cruz de la Sierra",
+          "adresse": "Calle Junín 372, entre Santa Bárbara y España, Santa Cruz de la Sierra",
+          "adresseCarte": "Calle Junín 372, Santa Cruz de la Sierra, Bolivie",
+          "telephones": [
+            {
+              "libelle": "Consul honoraire",
+              "numero": "+591 678 25 824",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Secrétariat",
+              "numero": "+591 609 41 900",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "santa-cruz-de-la-sierra@agenceconsulaire.fr"
+            }
+          ],
+          "horaires": "Lundi, mardi, jeudi et vendredi 8 h 30 – 12 h 30",
+          "siteWeb": "https://bo.ambafrance.org/Les-agences-consulaires-en-Bolivie",
+          "notes": []
+        },
+        {
+          "nom": "Agence consulaire de Cochabamba",
+          "type": "Consulat honoraire",
+          "ville": "Cochabamba",
+          "adresse": "Calle Francisco Viedma n° 0532, Cochabamba",
+          "adresseCarte": "Calle Francisco Viedma 532, Cochabamba, Bolivie",
+          "telephones": [
+            {
+              "libelle": "Fixe",
+              "numero": "+591 4 441 45 11",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Portable",
+              "numero": "+591 764 612 34",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "cochabamba@agenceconsulaire.fr"
+            }
+          ],
+          "horaires": "",
+          "siteWeb": "https://bo.ambafrance.org/Les-agences-consulaires-en-Bolivie",
+          "notes": []
+        },
+        {
+          "nom": "Agence consulaire de Sucre",
+          "type": "Consulat honoraire",
+          "ville": "Sucre",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://bo.ambafrance.org/Les-agences-consulaires-en-Bolivie",
+          "notes": [
+            "Agence consulaire répertoriée par l'ambassade ; coordonnées à confirmer sur la page officielle."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Tarija",
+          "type": "Consulat honoraire",
+          "ville": "Tarija",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://bo.ambafrance.org/Les-agences-consulaires-en-Bolivie",
+          "notes": [
+            "Agence consulaire répertoriée par l'ambassade ; coordonnées à confirmer sur la page officielle."
+          ]
+        }
+      ],
+      "sources": [
+        "https://bo.ambafrance.org/Coordonnees-et-plan-d-acces",
+        "https://bo.ambafrance.org/Les-agences-consulaires-en-Bolivie",
+        "https://www.diplomatie.gouv.fr/fr/services/annuaire-et-contacts/representations-francaises/ambassade-de-france-en-bolivie"
+      ]
+    },
+    {
+      "id": "colombie",
+      "nom": "Colombie",
+      "emoji": "🇨🇴",
+      "indicatif": "+57",
+      "siteOfficiel": "https://co.ambafrance.org/",
+      "urgencesLocales": [
+        {
+          "service": "Numéro d'urgence unique national",
+          "numero": "123",
+          "aVerifier": false,
+          "note": "Police, pompiers et ambulances : un seul numéro."
+        },
+        {
+          "service": "Pompiers (Bomberos)",
+          "numero": "119",
+          "aVerifier": true,
+          "note": "Ligne directe selon les villes ; le 123 reste le numéro à privilégier."
+        },
+        {
+          "service": "Croix-Rouge (Cruz Roja)",
+          "numero": "132",
+          "aVerifier": true,
+          "note": "Ligne directe selon les villes ; le 123 reste le numéro à privilégier."
+        }
+      ],
+      "postes": [
+        {
+          "nom": "Ambassade de France en Colombie",
+          "type": "Ambassade et section consulaire",
+          "ville": "Bogotá",
+          "adresse": "Carrera 11 n° 93-12, Bogotá",
+          "adresseCarte": "Ambassade de France, Carrera 11 # 93-12, Bogotá, Colombie",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+57 601 638 14 00",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Urgences",
+              "numero": "+57 601 638 15 64",
+              "aVerifier": false
+            },
+            {
+              "libelle": "France Consulaire (numéro local)",
+              "numero": "+57 601 378 95 15",
+              "aVerifier": false
+            }
+          ],
+          "emails": [],
+          "horaires": "France Consulaire : du lundi au vendredi, 14 h – 20 h (heure de Paris)",
+          "siteWeb": "https://co.ambafrance.org/",
+          "notes": [
+            "Un second numéro d'urgence, +57 601 309 96 67, est mentionné par certaines sources : à vérifier auprès du poste.",
+            "Adresse e-mail de la section consulaire : à vérifier sur le site officiel."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Medellín",
+          "type": "Consulat honoraire",
+          "ville": "Medellín",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [
+            {
+              "libelle": "Agence consulaire",
+              "numero": "+57 604 371 98 99",
+              "aVerifier": true
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "medellin@agenceconsulaire.fr"
+            }
+          ],
+          "horaires": "",
+          "siteWeb": "https://co.ambafrance.org/Les-Consuls-honoraires-4240",
+          "notes": [
+            "Adresse postale non confirmée : consulter la page officielle des consuls honoraires."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Carthagène des Indes",
+          "type": "Consulat honoraire",
+          "ville": "Carthagène des Indes",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [
+            {
+              "libelle": "Portable / WhatsApp",
+              "numero": "+57 313 399 20 65",
+              "aVerifier": true
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "carthagene-des-indes@agenceconsulaire.fr"
+            }
+          ],
+          "horaires": "",
+          "siteWeb": "https://co.ambafrance.org/Les-Consuls-honoraires-4240",
+          "notes": [
+            "Adresse postale non confirmée : consulter la page officielle des consuls honoraires."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Cali",
+          "type": "Consulat honoraire",
+          "ville": "Cali",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [
+            {
+              "libelle": "Agence consulaire",
+              "numero": "+57 2 883 59 04",
+              "aVerifier": true
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "consulfrance.cali@gmail.com"
+            }
+          ],
+          "horaires": "Permanences du lundi au jeudi 15 h – 18 h (à vérifier)",
+          "siteWeb": "https://co.ambafrance.org/Les-Consuls-honoraires-4240",
+          "notes": [
+            "Numéro indiqué dans l'ancien format colombien : le nouvel indicatif est probablement +57 602… — à vérifier."
+          ]
+        },
+        {
+          "nom": "Autres agences consulaires",
+          "type": "Consulats honoraires",
+          "ville": "Barranquilla, Bucaramanga, Pereira, Santa Marta",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://co.ambafrance.org/Les-Consuls-honoraires-4240",
+          "notes": [
+            "La France compte 7 agences consulaires en Colombie. Coordonnées de ces quatre postes à récupérer sur la page officielle."
+          ]
+        }
+      ],
+      "sources": [
+        "https://co.ambafrance.org/",
+        "https://co.ambafrance.org/Les-Consuls-honoraires-4240",
+        "https://www.diplomatie.gouv.fr/fr/services/annuaire-et-contacts/representations-francaises/ambassade-de-france-en-colombie"
+      ]
+    },
+    {
+      "id": "guatemala",
+      "nom": "Guatemala",
+      "emoji": "🇬🇹",
+      "indicatif": "+502",
+      "siteOfficiel": "https://gt.ambafrance.org/",
+      "urgencesLocales": [
+        {
+          "service": "Police nationale civile (PNC)",
+          "numero": "110",
+          "aVerifier": false,
+          "note": "Le 120 est également utilisé pour la PNC."
+        },
+        {
+          "service": "Pompiers volontaires (Bomberos Voluntarios)",
+          "numero": "122",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Pompiers municipaux (Ciudad de Guatemala)",
+          "numero": "123",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Croix-Rouge guatémaltèque (ambulances)",
+          "numero": "125",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "CONRED (catastrophes naturelles)",
+          "numero": "119",
+          "aVerifier": false,
+          "note": ""
+        }
+      ],
+      "postes": [
+        {
+          "nom": "Ambassade de France au Guatemala (et au Belize)",
+          "type": "Ambassade et section consulaire",
+          "ville": "Ciudad de Guatemala",
+          "adresse": "5a avenida 8-59, zona 14, Edificio COGEFAR, Ciudad de Guatemala",
+          "adresseCarte": "Ambassade de France, 5a Avenida 8-59, Zona 14, Edificio COGEFAR, Ciudad de Guatemala, Guatemala",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+502 2421 73 70",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Standard (2e ligne)",
+              "numero": "+502 2421 74 74",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Section consulaire / France Consulaire",
+              "numero": "+502 2357 24 06",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Français de l'étranger",
+              "adresse": "admin-francais.guatemala-amba@diplomatie.gouv.fr"
+            }
+          ],
+          "horaires": "Ambassade : lundi à jeudi 8 h – 13 h et 14 h – 17 h 30, vendredi 8 h – 13 h. Accueil du public : lundi à vendredi 9 h – 12 h. France Consulaire : lundi à vendredi 14 h – 20 h",
+          "siteWeb": "https://gt.ambafrance.org/Nos-coordonnees",
+          "notes": [
+            "Adresse postale : Boîte postale 971-A, 01014 Ciudad de Guatemala",
+            "Numéro d'astreinte pour les urgences en dehors des heures d'ouverture : à vérifier auprès du poste."
+          ]
+        },
+        {
+          "nom": "Agences consulaires",
+          "type": "Consulats honoraires",
+          "ville": "à vérifier",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://gt.ambafrance.org/",
+          "notes": [
+            "Aucune agence consulaire n'a pu être confirmée de façon fiable pour le Guatemala : consulter le site officiel du poste."
+          ]
+        }
+      ],
+      "sources": [
+        "https://gt.ambafrance.org/Nos-coordonnees",
+        "https://lannuaire.service-public.gouv.fr/ambassades/97d29ad8-a260-4fcc-a704-2bb4e0868252",
+        "https://conred.gob.gt/numeros-de-emergencia/"
+      ]
+    },
+    {
+      "id": "mexique",
+      "nom": "Mexique",
+      "emoji": "🇲🇽",
+      "indicatif": "+52",
+      "siteOfficiel": "https://mx.ambafrance.org/",
+      "urgencesLocales": [
+        {
+          "service": "Numéro d'urgence unique national",
+          "numero": "911",
+          "aVerifier": false,
+          "note": "Police, pompiers, ambulances et protection civile. Gratuit, 24 h/24, depuis tout téléphone."
+        },
+        {
+          "service": "Ángeles Verdes (assistance routière aux touristes)",
+          "numero": "078",
+          "aVerifier": false,
+          "note": ""
+        },
+        {
+          "service": "Locatel (informations et personnes disparues, Mexico)",
+          "numero": "+52 55 5658 11 11",
+          "aVerifier": true,
+          "note": "Service de la ville de Mexico uniquement."
+        }
+      ],
+      "postes": [
+        {
+          "nom": "Ambassade de France au Mexique",
+          "type": "Ambassade",
+          "ville": "Ciudad de México",
+          "adresse": "Campos Elíseos 339, Colonia Polanco, 11560 Ciudad de México",
+          "adresseCarte": "Ambassade de France, Campos Elíseos 339, Polanco, 11560 Ciudad de México, Mexique",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+52 55 9171 97 00",
+              "aVerifier": false
+            }
+          ],
+          "emails": [],
+          "horaires": "Du lundi au vendredi 9 h – 13 h",
+          "siteWeb": "https://mx.ambafrance.org/Nos-coordonnees,4074",
+          "notes": [
+            "Les démarches consulaires sont traitées par le consulat général de France à Mexico (adresse distincte, ci-dessous)."
+          ]
+        },
+        {
+          "nom": "Consulat général de France à Mexico",
+          "type": "Consulat général",
+          "ville": "Ciudad de México",
+          "adresse": "Lafontaine 32, Colonia Polanco, 11560 Ciudad de México",
+          "adresseCarte": "Consulat général de France, Lafontaine 32, Polanco, 11560 Ciudad de México, Mexique",
+          "telephones": [
+            {
+              "libelle": "France Consulaire (numéro local)",
+              "numero": "+52 55 5091 30 06",
+              "aVerifier": false
+            },
+            {
+              "libelle": "Astreinte consulaire (urgences)",
+              "numero": "+52 1 55 5406 86 64",
+              "aVerifier": true
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Consulat",
+              "adresse": "consulat.mexico-fslt@diplomatie.gouv.fr"
+            }
+          ],
+          "horaires": "Passeports : lundi à jeudi 9 h – 12 h 40, vendredi 9 h – 11 h 40. État civil : mardi à jeudi 9 h – 12 h. Visas : lundi à jeudi 9 h – 13 h 45 et 15 h 30 – 16 h 45, vendredi 9 h – 11 h 45",
+          "siteWeb": "https://mx.ambafrance.org/Accueil-du-public",
+          "notes": []
+        },
+        {
+          "nom": "Consulat général de France à Monterrey",
+          "type": "Consulat général",
+          "ville": "San Pedro Garza García (Monterrey)",
+          "adresse": "Calle Degollado 1213, Zona Mirasierra, Colonia Palo Blanco, 66236 San Pedro Garza García, Nuevo León",
+          "adresseCarte": "Consulat général de France, Degollado 1213, Palo Blanco, San Pedro Garza García, Nuevo León, Mexique",
+          "telephones": [
+            {
+              "libelle": "Standard",
+              "numero": "+52 81 3145 83 66",
+              "aVerifier": false
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Contact",
+              "adresse": "infocgf.mty@gmail.com"
+            }
+          ],
+          "horaires": "France Consulaire : lundi à vendredi 14 h – 20 h",
+          "siteWeb": "https://mx.ambafrance.org/-Consulat-general-a-Monterrey-",
+          "notes": [
+            "Adresse e-mail à confirmer auprès du poste."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Guadalajara",
+          "type": "Consulat honoraire",
+          "ville": "Guadalajara",
+          "adresse": "Avenida López Mateos 484-1, Guadalajara, Jalisco",
+          "adresseCarte": "Avenida López Mateos 484, Guadalajara, Jalisco, Mexique",
+          "telephones": [
+            {
+              "libelle": "Agence consulaire",
+              "numero": "+52 33 3616 55 16",
+              "aVerifier": true
+            }
+          ],
+          "emails": [
+            {
+              "libelle": "Agence consulaire",
+              "adresse": "guadalajara.chfrance@gmail.com"
+            }
+          ],
+          "horaires": "",
+          "siteWeb": "https://mx.ambafrance.org/Les-agences-consulaires-au-Mexique",
+          "notes": [
+            "Coordonnées non confirmées par une source officielle : à vérifier."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Cancún",
+          "type": "Consulat honoraire",
+          "ville": "Cancún",
+          "adresse": "Avenida Huayacán 11, piso 2, Supermanzana 313, Manzana 73, Lote 11, 77533 Cancún, Quintana Roo",
+          "adresseCarte": "Avenida Huayacán 11, Cancún, Quintana Roo, Mexique",
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://mx.ambafrance.org/Les-agences-consulaires-au-Mexique",
+          "notes": [
+            "Adresse non confirmée par une source officielle ; téléphone et e-mail à vérifier."
+          ]
+        },
+        {
+          "nom": "Agence consulaire de Mérida",
+          "type": "Consulat honoraire",
+          "ville": "Mérida",
+          "adresse": "Calle 60 n° 385, entre calles 41 y 43, Colonia Centro, 97000 Mérida, Yucatán",
+          "adresseCarte": "Calle 60 385, Centro, Mérida, Yucatán, Mexique",
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://mx.ambafrance.org/Les-agences-consulaires-au-Mexique",
+          "notes": [
+            "Adresse non confirmée par une source officielle ; téléphone et e-mail à vérifier."
+          ]
+        },
+        {
+          "nom": "Autres agences consulaires",
+          "type": "Consulats honoraires",
+          "ville": "Acapulco, Chihuahua, Hermosillo, La Paz, Mazatlán, Morelia, Oaxaca, Puebla, Querétaro, San Luis Potosí, Tijuana, Tuxtla Gutiérrez, Xalapa",
+          "adresse": "à vérifier",
+          "adresseCarte": null,
+          "telephones": [],
+          "emails": [],
+          "horaires": "",
+          "siteWeb": "https://mx.ambafrance.org/Les-agences-consulaires-au-Mexique",
+          "notes": [
+            "La France compte 17 agences consulaires au Mexique, dont une partie est temporairement vacante. Coordonnées à récupérer sur la page officielle."
+          ]
+        }
+      ],
+      "sources": [
+        "https://mx.ambafrance.org/Nos-coordonnees,4074",
+        "https://mx.ambafrance.org/Accueil-du-public",
+        "https://mx.ambafrance.org/Les-agences-consulaires-au-Mexique",
+        "https://www.diplomatie.gouv.fr/fr/services/annuaire-et-contacts/representations-francaises/ambassade-de-france-au-mexique"
+      ]
+    }
+  ]
+}
