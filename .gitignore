@@ -1,0 +1,25 @@
+# Dépendances
+node_modules/
+
+# Vercel
+.vercel/
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
