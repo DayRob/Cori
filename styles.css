@@ -1,0 +1,313 @@
+:root {
+  --bleu: #0b2a5b;
+  --bleu-clair: #1e4f9c;
+  --rouge: #c8102e;
+  --fond: #f4f5f7;
+  --carte: #ffffff;
+  --texte: #16202e;
+  --texte-doux: #5a6675;
+  --bord: #dfe3e8;
+  --alerte-fond: #fff8e1;
+  --alerte-bord: #e8c86a;
+  --alerte-texte: #6b4e00;
+  --rayon: 12px;
+  --tap: 44px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--texte);
+  background: var(--fond);
+  padding-bottom: 2rem;
+}
+
+/* ---------- En-tête ---------- */
+
+.topbar {
+  background: var(--bleu);
+  color: #fff;
+  padding: calc(1rem + env(safe-area-inset-top)) 1rem 1rem;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.topbar-sub {
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  color: #c3d3ea;
+}
+
+/* ---------- Navigation pays ---------- */
+
+.paysnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0.625rem 1rem;
+  background: var(--carte);
+  border-bottom: 1px solid var(--bord);
+}
+
+.paysnav::-webkit-scrollbar { display: none; }
+
+.paysnav a {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: var(--tap);
+  padding: 0 0.875rem;
+  border: 1px solid var(--bord);
+  border-radius: 999px;
+  background: var(--fond);
+  color: var(--texte);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.paysnav a:active { background: var(--bord); }
+
+/* ---------- Blocs ---------- */
+
+main { padding: 0 1rem; }
+
+.bloc {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--carte);
+  border: 1px solid var(--bord);
+  border-radius: var(--rayon);
+}
+
+.bloc > h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+}
+
+.bloc-urgence {
+  border-left: 4px solid var(--rouge);
+}
+
+.bloc-avertissement {
+  background: var(--alerte-fond);
+  border-color: var(--alerte-bord);
+  color: var(--alerte-texte);
+  font-size: 0.875rem;
+}
+
+.bloc-avertissement p { margin: 0 0 0.5rem; }
+.bloc-avertissement .maj { margin: 0; font-weight: 600; }
+
+/* ---------- Section pays ---------- */
+
+.pays {
+  margin: 1.5rem 0;
+  /* compense la nav collante lors d'un saut d'ancre */
+  scroll-margin-top: 4.25rem;
+}
+
+.pays-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  font-size: 1.375rem;
+}
+
+.pays-titre .emoji { font-size: 1.5rem; }
+
+.sous-titre {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texte-doux);
+}
+
+/* ---------- Liste de numéros d'urgence ---------- */
+
+.urgences {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--carte);
+  border: 1px solid var(--bord);
+  border-radius: var(--rayon);
+  overflow: hidden;
+}
+
+.urgences li + li { border-top: 1px solid var(--bord); }
+
+.urgences a,
+.urgences .sans-lien {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: var(--tap);
+  padding: 0.625rem 1rem;
+  color: var(--texte);
+  text-decoration: none;
+}
+
+.urgences a:active { background: var(--fond); }
+
+.urgences .service { font-weight: 500; }
+
+.urgences .numero {
+  flex: 0 0 auto;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--rouge);
+  font-variant-numeric: tabular-nums;
+}
+
+.urgences .note {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--texte-doux);
+}
+
+/* ---------- Fiche poste ---------- */
+
+.poste {
+  margin: 0 0 0.75rem;
+  padding: 1rem;
+  background: var(--carte);
+  border: 1px solid var(--bord);
+  border-radius: var(--rayon);
+}
+
+.poste h4 {
+  margin: 0;
+  font-size: 1.0625rem;
+}
+
+.poste-type {
+  margin: 0.125rem 0 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--texte-doux);
+}
+
+.champ {
+  display: block;
+  min-height: var(--tap);
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--bord);
+  color: var(--bleu-clair);
+  text-decoration: none;
+}
+
+.champ:active { opacity: 0.6; }
+
+.champ-libelle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--texte-doux);
+}
+
+.champ-valeur {
+  display: block;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+a.champ .champ-valeur { text-decoration: underline; }
+
+.champ-statique { color: var(--texte); }
+.champ-statique .champ-valeur { text-decoration: none; }
+
+.poste-notes {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+  color: var(--texte-doux);
+}
+
+.poste-notes li { margin-top: 0.375rem; }
+
+.badge {
+  display: inline-block;
+  margin-left: 0.375rem;
+  padding: 0.0625rem 0.375rem;
+  border-radius: 4px;
+  background: var(--alerte-fond);
+  border: 1px solid var(--alerte-bord);
+  color: var(--alerte-texte);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* ---------- Sources ---------- */
+
+.sources {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8125rem;
+}
+
+.sources li { margin-top: 0.25rem; }
+
+.sources a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  color: var(--texte-doux);
+  word-break: break-all;
+}
+
+details.sources-bloc summary {
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texte-doux);
+  cursor: pointer;
+}
+
+/* ---------- Divers ---------- */
+
+.noscript,
+.erreur {
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--alerte-fond);
+  border: 1px solid var(--alerte-bord);
+  border-radius: var(--rayon);
+  color: var(--alerte-texte);
+}
+
+@media (min-width: 720px) {
+  main, .topbar, .paysnav { max-width: 48rem; margin-left: auto; margin-right: auto; }
+  .topbar, .paysnav { border-radius: 0; }
+}

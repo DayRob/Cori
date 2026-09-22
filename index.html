@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Consulats de France — Amérique latine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Adresses des consulats de France et numéros d'urgence au Pérou, en Bolivie, en Colombie, au Guatemala et au Mexique.">
+<meta name="theme-color" content="#0b2a5b">
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Consulats FR">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Consulats de France</h1>
+  <p class="topbar-sub">Pérou · Bolivie · Colombie · Guatemala · Mexique</p>
+</header>
+
+<nav class="paysnav" id="paysnav" aria-label="Choisir un pays"></nav>
+
+<main id="main">
+  <section class="bloc bloc-urgence" id="urgence-france" aria-labelledby="urgence-france-titre">
+    <h2 id="urgence-france-titre">Urgence depuis l'étranger</h2>
+    <div id="urgence-france-contenu"></div>
+  </section>
+
+  <div id="pays-contenu"></div>
+
+  <section class="bloc bloc-avertissement" aria-labelledby="avertissement-titre">
+    <h2 id="avertissement-titre">Avertissement</h2>
+    <p id="avertissement-texte"></p>
+    <p class="maj">Dernière mise à jour des données : <span id="maj-date"></span></p>
+  </section>
+</main>
+
+<noscript>
+  <p class="noscript">Ce site a besoin de JavaScript pour afficher les fiches.
+  Les données brutes restent consultables dans <a href="data/consulats.json">data/consulats.json</a>.</p>
+</noscript>
+
+<script src="app.js"></script>
+</body>
+</html>
