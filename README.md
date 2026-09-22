@@ -8,6 +8,7 @@ cinq pays : **Pérou, Bolivie, Colombie, Guatemala, Mexique**.
 - Chaque adresse ouvre l'application de cartes.
 - Chaque e-mail est un lien `mailto:`.
 - Le site s'ajoute à l'écran d'accueil d'un iPhone et s'ouvre en plein écran.
+- **Il fonctionne sans réseau** une fois la première visite effectuée.
 
 ## ⚠️ Fiabilité des données
 
@@ -126,9 +127,34 @@ vercel          # déploiement de prévisualisation
 vercel --prod   # mise en production
 ```
 
-Le fichier [`vercel.json`](vercel.json) ne fait qu'une chose : empêcher la mise
-en cache de `data/consulats.json`, pour qu'une correction de coordonnées soit
-visible immédiatement.
+Le fichier [`vercel.json`](vercel.json) se limite à désactiver la mise en cache
+HTTP de `data/consulats.json` et de `sw.js` : une correction de coordonnées est
+ainsi visible immédiatement, et une nouvelle version du service worker est bien
+prise en compte au lieu de rester figée.
+
+## Fonctionnement hors ligne
+
+Après la première visite, `sw.js` garde en cache la page, ses styles, ses icônes
+et `data/consulats.json`. Les coordonnées restent donc consultables sans réseau
+— le cas d'usage principal de ce site.
+
+- `data/consulats.json` et les navigations : **réseau d'abord**, cache en
+  secours. Une correction est visible dès qu'il y a du réseau.
+- CSS, JS et icônes : **cache d'abord**, rafraîchis en arrière-plan.
+
+Quand la connexion est absente, un bandeau le signale en haut de page, pour que
+l'on sache que les coordonnées affichées viennent d'une copie locale.
+
+Deux limites à connaître :
+
+- Le hors ligne exige **HTTPS** (ou `localhost`). Sur Vercel, c'est automatique.
+- Sur iPhone, le cache d'un site ajouté à l'écran d'accueil est **purgé après
+  quelques semaines sans ouverture**. Ouvrez l'app avant un départ pour vous
+  assurer que les données sont fraîches et présentes.
+
+Après toute modification de `sw.js` ou de sa liste `SHELL`, **incrémentez la
+constante `VERSION`** (`consulats-v1` → `consulats-v2`) : l'ancien cache est
+alors purgé au lieu de servir indéfiniment les anciens fichiers.
 
 ## Installer sur iPhone
 
@@ -142,6 +168,7 @@ le site s'ouvre sans la barre d'adresse.
 index.html              page unique
 styles.css              mise en forme, mobile d'abord
 app.js                  rendu des fiches depuis le JSON (DOM natif, 0 dépendance)
+sw.js                   service worker : consultation hors ligne
 data/consulats.json     ← toutes les données éditables
 manifest.webmanifest    métadonnées d'installation
 icons/                  icônes PNG + SVG, dont apple-touch-icon

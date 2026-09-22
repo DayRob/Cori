@@ -84,6 +84,20 @@ body {
 
 .paysnav a:active { background: var(--bord); }
 
+/* ---------- Bandeau hors ligne ---------- */
+
+.hors-ligne {
+  margin: 0;
+  padding: 0.625rem 1rem;
+  background: var(--alerte-fond);
+  border-bottom: 1px solid var(--alerte-bord);
+  color: var(--alerte-texte);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.hors-ligne[hidden] { display: none; }
+
 /* ---------- Blocs ---------- */
 
 main { padding: 0 1rem; }

@@ -212,6 +212,29 @@
     document.getElementById('main').prepend(p);
   }
 
+  /** Bandeau « hors ligne » : indique que les données affichées viennent du cache. */
+  function suivreConnexion() {
+    var bandeau = document.getElementById('hors-ligne');
+    function majEtat() { bandeau.hidden = navigator.onLine !== false; }
+    window.addEventListener('online', majEtat);
+    window.addEventListener('offline', majEtat);
+    majEtat();
+  }
+
+  /** Enregistre le service worker qui rend le site consultable sans réseau. */
+  function activerHorsLigne() {
+    if (!('serviceWorker' in navigator)) return;
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {
+        // Hors ligne indisponible (file://, navigation privée) : le site
+        // continue de fonctionner normalement avec du réseau.
+      });
+    });
+  }
+
+  suivreConnexion();
+  activerHorsLigne();
+
   fetch('data/consulats.json', { cache: 'no-cache' })
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
