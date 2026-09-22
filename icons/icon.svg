@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Consulats de France">
+  <rect width="512" height="512" fill="#0b2a5b"/>
+  <!-- Croix blanche : secours -->
+  <path d="M206 89h100v67h67v100h-67v67H206v-67h-67V156h67z" fill="#fff"/>
+  <!-- Drapeau tricolore sur liseré blanc -->
+  <rect x="118" y="345" width="276" height="80" fill="#fff"/>
+  <rect x="127" y="354" width="86" height="62" fill="#0b2a5b"/>
+  <rect x="299" y="354" width="86" height="62" fill="#c8102e"/>
+</svg>
